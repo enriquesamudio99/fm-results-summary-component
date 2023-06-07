@@ -12,7 +12,7 @@ const initApp = () => loadResults();
 
 const loadResults = async () => {
 
-    const data = await fetch("../../data.json");
+    const data = await fetch("./data.json");
     const response = await data.json();
 
     let totalScore = 0;
