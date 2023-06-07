@@ -9,13 +9,16 @@
 </head>
 <body>
 
+    <div class="loader" id="loader">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
     <div class="container">
         <div class="card">
             <div class="card__result">
                 <span class="card__result-subtitle">Your Result</span>
                 <div class="card__result-circle">
                     <p class="card__result-circle-text">
-                        <span class="card__result-circle-number" id="resultPercentageNumber">76</span> of 100
+                        <span class="card__result-circle-number" id="resultPercentageNumber"></span> of 100
                     </p>
                 </div>
                 <div class="card__result-info">
@@ -25,55 +28,14 @@
             </div>
             <div class="card__summary">
                 <h2 class="card__summary-title">Summary</h2>
-                <ul class="card__summary-list">
-                    <li class="card__summary-item">
-                        <div class="card__summary-info">
-                            <img src="./assets/images/icon-reaction.svg" alt="Category Icon" class="card__summary-info-icon">
-                            <p class="card__summary-info-category">Reaction</p>
-                        </div>
-                        <div class="card__summary-score">
-                            <p class="card__summary-score-text">
-                                <span class="card__summary-score-span">80</span> / 100
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card__summary-item">
-                        <div class="card__summary-info">
-                            <img src="./assets/images/icon-memory.svg" alt="Category Icon" class="card__summary-info-icon">
-                            <p class="card__summary-info-category">Memory</p>
-                        </div>
-                        <div class="card__summary-score">
-                            <p class="card__summary-score-text">
-                                <span class="card__summary-score-span">92</span> / 100
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card__summary-item">
-                        <div class="card__summary-info">
-                            <img src="./assets/images/icon-verbal.svg" alt="Category Icon" class="card__summary-info-icon">
-                            <p class="card__summary-info-category">Verbal</p>
-                        </div>
-                        <div class="card__summary-score">
-                            <p class="card__summary-score-text">
-                                <span class="card__summary-score-span">61</span> / 100
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card__summary-item">
-                        <div class="card__summary-info">
-                            <img src="./assets/images/icon-visual.svg" alt="Category Icon" class="card__summary-info-icon">
-                            <p class="card__summary-info-category">Visual</p>
-                        </div>
-                        <p class="card__summary-score">
-                            <span class="card__summary-score-span">72</span> / 100
-                        </p>
-                    </li>
-                </ul>
+                <ul class="card__summary-list" id="summaryList"></ul>
                 <button class="btn">
                     Continue
                 </button>
             </div>
         </div>
     </div>
+
+    <script src="./assets/scripts/scripts.js"></script>
 </body>
 </html>
