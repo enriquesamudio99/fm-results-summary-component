@@ -34,7 +34,7 @@ const loadResults = async () => {
 
         const summaryInfoIcon = document.createElement("IMG");
         summaryInfoIcon.src = icon;
-        summaryInfoIcon.alt = "Category Icon";
+        summaryInfoIcon.alt = "";
         summaryInfoIcon.classList.add("card__summary-info-icon");
 
         const summaryInfoCategory = document.createElement("P");
